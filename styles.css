@@ -14,8 +14,14 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+#heromo{
+  display: none;
+}
 
-
+#explo:hover{
+  background-color: white;
+  color: #3ddc84;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -38,9 +44,11 @@ ul {
 }
 a {
   text-decoration: none;
+  
 }
 img:not(.logo) {
   width: 100%;
+  
 }
 img {
   display: block;
@@ -50,6 +58,7 @@ h1,
 h2,
 h3,
 h4 {
+  cursor: default;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -79,10 +88,12 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  cursor: default;
 }
 
 #serviciotex{
   position: relative; top: 90px; left: 750px; font-size: 25px;
+  color: dimgray;
 }
 
 #explo{
@@ -94,6 +105,14 @@ p {
   color: white
 }
 
+#abouttex{
+  position: relative;
+  left: 40px;
+  color: dimgray;
+  top: 50px;
+  font-size: 20px;
+}
+
 #aboutima{
   width:55%;height:30%px; position: relative; top: -45px; left: 650px; z-index: -1;
 }
@@ -103,33 +122,17 @@ p {
   width:100vh; height:60vh; position: relative; top: -45px; left: 20px; z-index: -1;
 }
 
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
+@media screen and(max-width:600px) {
+  .links-container{
+    position: relative;
+    top: 20vh;
+    
   }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  img {
-    width: 100%;
-    height: auto;
+ 
+
 }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
+
+
 
 
 .btn {
@@ -293,6 +296,7 @@ header {
   background: url(nasau.jpg);
   background-repeat:no-repeat;
   background-size: 100%;
+
   z-index: 1;
   
 }
@@ -314,7 +318,17 @@ header {
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
+  #heromo{
+    display: block;
+    height: 70vh;
+  }
+
+  header{
+    background: none;
+    
+  }
+  
   .container p {
     max-width: 40rem;
   }
@@ -323,6 +337,7 @@ header {
     overflow-x: hidden;
   }
   #herotex{
+    color: black;
     font-size: 3vh;
   }
 
@@ -381,9 +396,14 @@ header {
     top: -30vh;
     position: relative;
     font-size: 2vh;
+    
     }
 
-    .container{
+    #bann{
+     height: 100vh;
+    }
+
+   .container{
       height: 20vh;
       
     }

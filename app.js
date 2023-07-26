@@ -48,6 +48,7 @@ window.addEventListener("scroll", function () {
   const navHeight = navbar.getBoundingClientRect().height;
   if (scrollHeight > 0) {
     navbar.classList.add("fixed-nav");
+    navbar.style.width="100vw";
     navbar.style.background="black";
     navbar.style.zIndex = "2"
     
